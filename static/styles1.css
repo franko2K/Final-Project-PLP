@@ -1,0 +1,430 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    position: relative;
+    height: 100vh;
+}
+.intro{
+    background-image: linear-gradient(to top, #967cd3 0%, #be9dcd 100%);
+    padding-bottom: 15px;
+   padding-top: 40px;
+}
+
+.intro h1 {
+   text-align: center;
+   margin-bottom: 27px;
+   padding-top: 36px;
+}
+
+.header {
+    display:flex;
+    margin-bottom: 15px;   
+}
+
+.logo-div {
+    max-height: 100%;
+}
+
+.errand-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10px;
+}
+
+.errand-cont span p a{
+    margin-top: 20px;
+    text-decoration: none;
+    color: #000;
+}
+
+.about-section h1,h3 {
+    text-align: center;
+    margin-bottom: 13px;
+    margin-top: 14px;
+    color: rgb(112, 43, 176);
+} 
+
+.about-section{
+    margin: 15px;
+    font-size: 20px;
+}  
+
+.contact-section{
+    position: relative;
+}
+
+.contact-section h1{
+    text-align: center;
+    margin-top: 16px;
+    color: rgb(112, 43, 176);  
+}
+
+.services{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-left: 3%;
+}
+
+.services img{
+    width: 100%;
+}
+
+.our-services{
+    display: flex;
+    align-items: center;
+    font-weight: 500;  
+}
+
+.left {
+   display: block; 
+   position: absolute;
+   left: 0%;
+   right: 50%;
+   top: 30px;
+   text-align: start;
+   padding-left: 10%;
+   padding-top: 10px;
+   font-size: 18px;
+   overflow: hidden;
+   margin-top: 20px;
+}
+
+.left input{
+    margin-top: 17px;
+    margin-bottom: 17px;
+    display: flex;
+    align-items: end;
+    height: 48px;
+    padding-left: 5px;   
+}
+
+textarea {
+    resize: none;
+    margin-bottom: 9px;
+    padding-top: 10px;
+    padding-left: 5px;
+}
+
+.left .btn{
+    display: block; 
+    width: 100%;
+    padding-top: 7px; 
+    padding-bottom: 7px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    background-color: rgb(112, 43, 176);
+    letter-spacing: 2px;
+}
+
+.left .btn:hover {
+    background-color: rgb(173, 93, 248);
+}
+
+.right {
+    position: absolute;
+    left: 50%;
+    right: 0;
+    top: 30px;
+    overflow: hidden;
+    padding-left: 3%;
+    padding-top: 10px;
+    margin-top: 5px;
+}
+
+.right h4{
+    font-size: 20px;
+    margin: 15px 0;
+}
+
+.footer {
+    width: 100%;
+    background-color: rgb(159, 67, 245);
+    min-height: 140px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    font-weight: 600;
+}
+
+.icons i{
+    width: 35px;
+    height: 10px;
+    font-size: 29px;
+    transition: color 0.3s ease-in-out;
+}
+
+.icons i:hover{
+    color: #000;
+    cursor: pointer;
+}
+
+header{
+    display: flex;   
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 100;
+    padding: 10px;
+    background-color: white;
+}
+
+.header-left{
+    display: flex;
+    gap: 20px;
+    padding-right: 8px;
+    font-size: 17px;
+    font-weight: 500;
+    color: rgb(8, 7, 8);   
+}
+
+.header-left a{
+     text-decoration: none;
+}
+header div img{
+    height: 30px;
+    width: 120px;
+}
+
+@media only screen and (max-width: 2400px) {
+    .errand-cont {
+        font-size: 27px;
+        font-weight: 600;
+    }
+    .errand-cont span p a{
+        font-weight: 600; 
+    }
+    .contact-section{
+        min-height: 488px;
+        overflow: hidden;
+    }
+    .right {
+        position: absolute;
+        left: 50%;
+        right: 0;
+        top: 30px;
+        overflow: hidden;
+        padding-left: 3%;  
+    }
+
+    .left input{
+        display: block;
+        width: 100%;
+        height: 48px;   
+        padding-top: 7px;
+        padding-bottom: 7px; 
+    }
+
+    textarea {
+        height: 200px;
+        width:100%;
+        resize: none;
+    }
+
+    .left {
+        display: block; 
+        position: absolute;
+        left: 0%;
+        right: 50%;
+        top: 30px;
+        text-align: start;
+        padding-left: 5%;
+    }
+
+    .team-grid{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        text-align: center;
+        margin: 10px 20px;
+        font-size: 25px;
+        font-weight: 500;
+    } 
+
+    .team-grid img{
+        width: 100%;
+        border-radius: 10px;  
+    }
+    .our-services{
+        padding-left: 50px;
+        font-size: 20px;
+    }
+
+}
+@media only screen and (max-width: 1700px) {
+    .errand-cont {
+        font-size: 24px;
+        font-weight: 550;
+    }
+    .errand-cont span p a{
+        font-weight: 550;
+    }
+    .contact-section{
+        min-height: 488px;
+        overflow: hidden;
+    }
+    .right {
+        position: absolute;
+        left: 50%;
+        right: 0;
+        top: 30px;
+        overflow: hidden;
+        padding-left: 3%;  
+    }
+
+    .left input{
+        display: block;
+        width: 100%;
+        height: 48px;   
+        padding-top: 7px;
+        padding-bottom: 7px; 
+    }
+
+    textarea {
+        height: 200px;
+        width:100%;
+        resize: none;
+    }
+
+    .left {
+        display: block; 
+        position: absolute;
+        left: 0%;
+        right: 50%;
+        top: 30px;
+        text-align: start;
+        padding-left: 5%;
+    }
+    .team-grid{
+        gap: 15px;
+        font-size: 22px;
+    } 
+}
+@media only screen and (max-width: 1200px) {
+    .errand-cont {
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .errand-cont span p a{
+        font-weight: 500;
+    }
+    .contact-section{
+        min-height: 488px;
+        overflow: hidden;
+    }
+    .right {
+        position: absolute;
+        left: 50%;
+        right: 0;
+        top: 30px;
+        overflow: hidden;
+        padding-left: 3%;  
+    }
+
+    .left input{
+        display: block;
+        width: 100%;
+        height: 48px;   
+        padding-top: 7px;
+        padding-bottom: 7px; 
+    }
+
+    textarea {
+        height: 200px;
+        width:100%;
+        resize: none;
+    }
+
+    .left {
+        display: block; 
+        position: absolute;
+        left: 0%;
+        right: 50%;
+        top: 30px;
+        text-align: start;
+        padding-left: 5%;
+    }
+    .team-grid{
+        gap: 15px;
+        font-size: 20px;
+    } 
+    .our-services{
+        padding-left: 30px;
+        font-size: 17px;
+    }
+}
+@media only screen and (max-width: 900px) {
+    .header {
+        display: block;
+        padding-top: 15px;
+    }
+    .logo-div{
+        text-align: center;
+    }
+    .logo-div img{
+        width: 70%;
+    }
+    .errand-cont {
+        margin-top: 20px;
+        padding-bottom: 15px;
+        font-size: 16px;
+    }
+    .errand-cont span p a{
+        font-weight: 500;
+    }
+    .right {
+        position: initial;
+        font-size: 16px; 
+        margin-bottom: 30px; 
+    }
+
+    .left input{
+        display: block;
+        width: 100%;
+        height: 48px;   
+        padding-top: 10px;
+        padding-bottom: 10px; 
+    }
+
+    textarea {
+        height: 200px;
+        width:100%;
+        resize: none;
+    }
+
+    .left {
+        position: initial; 
+        padding-left: 0%;
+        display: block; 
+        margin-left: 4%;
+        margin-right: 4%;
+     }
+     .about-section p{
+        font-size: 16px;
+     }
+
+     .team-grid{
+        gap: 15px;
+        font-size: 17px;
+    } 
+    .our-services{
+        padding-left: 30px;
+        font-size: 13px;
+    }
+}

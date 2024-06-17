@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>LOGOUT</title>
+</head>
+<body>
+
+  <div class="container" id="container">
+    <div class="form-container logout">
+         <h2 style="margin-bottom: 15px;">Are you sure you want to Logout?</h2>
+        <div class="logout-form">
+            <form action="/logoutyes" method="get">
+                <button type="button"><a href="/logoutyes">YES</a></button>  
+            </form>
+            <form action="/home" method="get">
+                <button type="button"><a href="/home">NO</a></button>
+            </form>
+        </div>
+    </div>
+    <div class="small-container">
+        
+    </div> 
+</div>   
+
+ <script type="module" src="server.js"></script>  
+</body>
+</html>

@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior:calc(10s);
+}
+
+body{
+    background-color: #c9d6ff;
+    background: linear-gradient(to right, #e2e2e2, #c9d6ff);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    position: relative;
+    overflow: hidden;
+    width: 838px;
+    max-width: 100%;
+    min-height: 540px;    
+}
+
+.container p{
+    line-height: 20px;
+    letter-spacing: 0.3px;
+    margin: 10px 0;
+}
+
+.form-container span{
+    font-size: 16px;
+    font-weight: 800;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.form-container{
+    padding-top: 40px;
+    position: absolute;
+    font-size: 19px;
+    top: 0;
+    left: 0;
+    right: 45%;
+    bottom: 0;
+    text-align: center;
+}
+
+.form-container input{
+    display: block;
+    width: 70%;
+    margin: 20px auto;
+    padding: 15px;
+    border: 2px solid #c9d6ff;
+}
+.form-container button{
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    background-color: #c9d6ff;
+    color: #000;
+    font-weight: 500;
+}
+
+.form-container button>a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.logout{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 0;
+}
+
+.logout-form form{
+    display: inline-block;
+    padding:20px;
+}
+
+.logout button{
+   padding: 15px 35px ;
+}
+
+.panel {
+    color: #fff;
+    text-align: center;
+    font-size: 14;
+    font-weight: 800;
+    position: absolute;
+    left: 19%;
+    top: 85%;
+}
+
+.panel a{
+    cursor: pointer;
+    color: #fff;
+    text-decoration: none;
+}
+
+.small-container {
+    position: absolute;
+    top: 0;
+    left: 55%;
+    right: 0%;
+    bottom: 0;
+    background-image: url(/images/ERRUNDS.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;    
+}
+

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>ER.RUN.DS</title>
+    <link rel="icon" type="image" href="/images/favicon-errunds.png">
+</head>
+<body>
+  <header>
+    <div>
+      <img src="/images/ER.RUN.DS.png" alt="logo">
+    </div>
+    <div class="header-left">
+       <a href="#about">ABOUT</a>
+       <a href="#Contact">CONTACT</a>
+       <a href="/logout">LOGOUT</a>
+    </div>
+
+  </header >
+  <section class="intro">
+    <h1>Get Your Errands Done Instantly!</h1>
+    <div class="header">
+      <div class="logo-div">
+        <img src="/images/errunds-logob.png" alt="errunds-logo">
+      </div>
+      <div class="errand-cont">
+        <p>Need an on-demand errand service?<br> We can run er-run-ds for you in as little as an hour! <br>
+        With on-demand, same-day and next day delivery options to choose from, we're sure to have a solution for you!
+        <br>
+          Contact us to book our errand services:
+        </p>
+        <span>
+          <p><a href="tel:+254712345678"> +254712345678</a></p>
+          <p><a href="tel:+254718765432"> +254718765432</a></p>
+        </span>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" >
+   <div class="about-section">
+      <h1>ABOUT ERRUNDS</h1>
+        <p>
+          At errands, we envision a world where Individuals and businesses can fulfill their personal and business goals without physically deserting their Major productive endeavors.<br> We believe 24 hours can yield 48-hour results with extra help, and we're here to provide help to everyone with our errand running services.
+          <br>
+          We are committed to ensuring great errand services and promoting sustainable practices in all aspects of our business.
+        </p>
+   </div>
+
+    <div>
+      <h3>OUR SERVICES</h3>
+      <div class="services">
+        <div><img src="/images/purple-delivery.png" alt=""></div>
+       <div class="our-services">
+          <p>
+            We offer a wide selection of  errand running services to government, youths, businesses, seniors and Individuals, including queuing, pick ups & drop offs, banking e.t.c. We basically run errands for people who are unable to. 
+          </p>
+       </div>
+        <div>
+          <img src="/images/purple-errunds.png" alt="errunds">
+        </div>
+      </div>
+    </div>
+
+  <div>
+    <h3 >THE TEAM</h3>
+    <div class="team-grid">
+      <div>
+        <img src="/images/frank.jpg" alt="me">
+        <p>Frankie Kamau</p>
+        <p>Founder/ CEO</p>
+      </div>
+      <div>
+        <img src="/images/bob-hart.jpeg" alt="him">
+        <p>Bob Hart</p>
+        <p>Head of Operations</p>
+      </div>
+      <div>
+        <img src="/images/rina-hicks.jpeg" alt="her">
+        <p>Rina Hicks </p>
+        <p>Secretary</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section id="Contact" class="contact-section">
+    <form action="/home" method="post">
+       <h1>CONTACT US</h1>
+      <div class="left">
+       <form method="post" action="/home">
+          <h4>Get in touch with us!</h4>
+          <input class="name" name="name" type="text" placeholder="NAME">
+          <input class="email" name="email" type="email" placeholder="EMAIL">
+          <textarea class="texts" name="message" id="" cols="65" rows="10" placeholder="MESSAGE"></textarea>
+          <button onclick="clearInput()" type="submit" class="btn">SEND</button>
+       </form>
+      </div>
+      <div class="right">
+        <h4>Get in touch with us!</h4>
+        <p>Looking for something special? Have a question? Let us know, and we'll get back to you soon. Try one of our errand errand running services today.</p>
+        <div class=""> 
+          <h4>Errands</h4>
+          <p>Nairobi, Kiambu, Thika</p>
+          <span>
+            <p>Call us on:<a href="tel:+254712345678"> +254712345678</a></p>
+            <p>Whatsapp: +254712345678</p>
+          </span>
+          <span>Email:<a href="mailto:err.unds@gmail.com"> er.runds@gmail.com</a> </span>
+          <h4>Hours</h4>
+          <span>We are open everyday apart from Sundays</span>
+        </div>
+      </div>
+    </form>
+  </section>
+
+  <footer>
+    <div class="footer">
+      <div class="icons">
+        <i class="fa fa-facebook-f"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+        <i class="fa fa-youtube"></i>
+      </div>
+      <div>
+         <p>Copyright © 2024 Er.run.ds - All Rights Reserved.
+         </p>
+      </div>
+    </div>
+    
+  </footer>
+
+
+ <script type="module" src="server.js"></script>  
+</body>
+</html>
